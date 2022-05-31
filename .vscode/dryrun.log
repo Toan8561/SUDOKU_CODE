@@ -1,6 +1,7 @@
 make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: Entering directory `e:/SCHOOL_YEAR/4_Giai_thuat_cau_truc_dl/NHOM5_GIAI-CAU-DO-SUDOKU/SUDOKU_CODE'
 mkdir output
+ 
 g++ -std=c++17 -Wall -Wextra -g -Iinclude -c src/Backtracking.cpp  -o src/Backtracking.o
 g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\Backtracking.exe src/Backtracking.o  -Llib
 echo Executing 'all' complete!

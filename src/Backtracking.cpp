@@ -612,7 +612,7 @@ void write_solution(int type){
     if (myFile.is_open()){
         myFile << "\n";
         for (i = 0; i < SIZE; i++) {
-            myFile << "<";
+            myFile << ">";
             for(j = 0; j < SIZE; j++) {
                 myFile <<matrix[i][j]<<" ";
             }
