@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Tue May 31 17:07:57 2022
+# Make data base, printed on Tue May 31 17:23:43 2022
 
 # Variables
 
@@ -52,8 +52,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
-ONEDRIVE = C:\Users\PC\ 
-OneDrive - hcmute.edu.vn
+ONEDRIVE = C:\Users\PC\OneDrive - hcmute.edu.vn
 # environment
 XILINXD_LICENSE_FILE = E:\Xilinx_installer\Xilinx (1).lic
 # environment
@@ -63,22 +62,22 @@ MAKEFILE_LIST :=  makefile
 # environment
 TMP = C:\Users\PC\AppData\Local\Temp
 # makefile (from `makefile', line 54)
-SOURCES := src/main.cpp
+SOURCES := src/Backtracking.cpp
 # makefile (from `makefile', line 10)
 CXXFLAGS := -std=c++17 -Wall -Wextra -g
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-PROGRAMW6432 =  
-C:\Program Files
+PROGRAM 
+W6432 = C:\Program Files
 # environment
 PYTHON310 = C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10\Python 3.10
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a6a2f81c-96df-4f8d-922c-c56c8d9dc85b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c66e84c0-63ce-4241-9a40-1f592d6c1475-sock
 # environment
-VSCODE_CWD = C:\Users\PC\Downloads\Sudoku
+VSCODE_CWD = C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders
 # environment
 NO_PROXY = 127.0.0.1
 # environment
@@ -86,8 +85,7 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # makefile (from `makefile', line 36)
 MD := mkdir
 # environment
-NIEXTCCOMPILER 
-SUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
 # environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
@@ -105,11 +103,12 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `makefile', line 27)
 LIB := lib
 # default
-.FEATURES := target-specific order-only second-expansion else-if archives
+.FEATURES := target-specific 
+ order-only second-expansion else-if archives
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14428_XHQHDKKRUWAWJETS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3288_UEKTRQQWHDAXZJPP
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -117,20 +116,20 @@ COMPUTERNAME = DESKTOP-PGSTLPU
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # makefile (from `makefile', line 65)
-OUTPUTMAIN := output\main.exe
+OUTPUTMAIN := output\Backtracking.exe
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERNAME = PC
+USERN 
+AME = PC
 # environment
 PUBLIC = C:\Users\Public
- 
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\PC\AppData\Roaming\Code - Insiders\CachedData\6428d0fc7dae5801cdaf2d160ac39a3dfc8f0c06
+VSCODE_CODE_CACHE_PATH = C:\Users\PC\AppData\Roaming\Code - Insiders\CachedData\acb156d6fb0dc451f427748d5f68774f17cc96fd
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -146,15 +145,15 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 USERDOMAIN = DESKTOP-PGSTLPU
 # environment
-PLATFORMIO_PATH = C:\Users\PC\.platformio\python3;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin
+PLATFORMIO_PATH = C:\Users\PC\.platformio\python3;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\msys64\mingw64\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\msys64\mingw64\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin
-# makefile (from `makefile', line 34)
- 
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;E:\runtime\win64;E:\bin;E:\Polyspace\R2021a\runtime\win64;E:\Polyspace\R2021a\bin;E:\Polyspace\R2021a\polyspace\bin;C:\Program Files\Microchip\xc8\v2.32\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python310\;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files (x86)\GnuWin32\bin;C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\msys64\mingw64\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts;
+# makefile (from `m 
+akefile', line 34)
 FIXPATH = $(subst /,\,$1)
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\PC\OneDrive - hcmute.edu.vn
@@ -175,8 +174,8 @@ LFLAGS =
 # environment
 LOCALAPPDATA = C:\Users\PC\AppData\Local
 # environment
-PSMODULEPATH = %Prog 
-ramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+P 
+SMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := make.exe
 # environment
@@ -194,8 +193,7 @@ VSCODE_IPC_HOOK = \\.\pipe\1285fbe70a488fdb69f0ec6a6e2e9d40-1.68.0-insider-main-
 # environment
 HOMEPATH = \Users\PC
 # environment
-COMMONPROGRAMFILES(X86)  
-= C:\Program Files (x86)\Common Files
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 PROMPT = $P$G
 # environment
@@ -205,7 +203,7 @@ MFLAGS = -Rrqp
 # environment
 PT8HOME = E:\Cisco Packet Tracer 8.1.1
 # makefile (from `makefile', line 30)
-MAIN := main.exe
+MAIN := Backtracking.exe
 # environment
 SYSTEMROOT = C:\WINDOWS
 # automatic
@@ -215,10 +213,12 @@ SYSTEMROOT = C:\WINDOWS
 # environment
 APPDATA = C:\Users\PC\AppData\Roaming
 # environment
-TEMP = C:\Users\PC\AppData\Local\Temp
+__COMPAT_LAYER = DetectorsAppHealth
 # environment
-COMSPEC = C:\WINDOWS\system32\cmd.e 
-xe
+TEMP = C 
+:\Users\PC\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
 # makefile (from `makefile', line 18)
 OUTPUT := output
 # default
@@ -240,69 +240,72 @@ SUFFIXES :=
 # environment
 SYSTEMDRIVE = C:
 # environment
-PROCESSOR_REVISION = 3c03
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 3 
+c03
 # environment
 MOZ_PLUGIN_PATH = C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\plugins\
 # environment
-M 
-AKELEVEL := 0
+MAKELEVEL := 0
 # makefile (from `makefile', line 57)
-OBJECTS := src/main.o
+OBJECTS := src/Backtracking.o
 # environment
 LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 14428
+VSCODE_PID = 3288
 # environment
 NO_XILINX_DATA_LICENSE = HIDDEN
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-PGSTLPU
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=14/155=9%
+# Load=120/1024=12%, Rehash=0, Collisions=14/166=8%
 
 # Pattern-specific Variable Values
 
+ 
 # No pattern-specific variable values.
 
 # Directories
 
-# E:\Polyspace\R2021a\runtime\win64 (key E:/Polyspace/R2021a/runtim 
-e/win64, mtime 1630905429): 10 files, no impossibilities.
+# E:\Polyspace\R2021a\runtime\win64 (key E:/Polyspace/R2021a/runtime/win64, mtime 1630905429): 10 files, no impossibilities.
 # C:\Users\PC\AppData\Local\Programs\Python\Python310\ (key C:/Users/PC/AppData/Local/Programs/Python/Python310/, mtime 1650880538): 20 files, no impossibilities.
 # C:\Program Files (x86)\Bitvise SSH Client (key C:/Program Files (x86)/Bitvise SSH Client, mtime 1647889759): 46 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1623054499): 30 files, no impossibilities.
-# C:\ 
-Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1652375150): 169 files, no impossibilities.
-# . (key e:/SCHOOL_YEAR/4_Giai_thuat_cau_truc_dl/NHOM5_GIAI-CAU-DO-SUDOKU/SUDOKU_CODE, mtime 1653991660): 10 files, no impossibilities.
-# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1623047896): 10 files, no impossibilities.
-# C:\Users\PC\AppData\Local\Microsoft\WindowsApps (key C:/Users/PC/AppData/Local/Microsoft/WindowsApps, mt 
-ime 1653650239): 11 files, no impossibilities.
+# C:\Windows\System32\Window 
+sPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1623054499): 30 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1652375150): 169 files, no impossibilities.
+# . (key e:/SCHOOL_YEAR/4_Giai_thuat_cau_truc_dl/NHOM5_GIAI-CAU-DO-SUDOKU/SUDOKU_CODE, mtime 1653991815): 10 files, no impossibilities.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1623047896): 10 files, no i 
+mpossibilities.
+# C:\Users\PC\AppData\Local\Microsoft\WindowsApps (key C:/Users/PC/AppData/Local/Microsoft/WindowsApps, mtime 1653650239): 11 files, no impossibilities.
 # E:\runtime\win64: could not be stat'd.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1653070858): 5 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1648745074): 124 files, no impossibilities.
-# E:\Polyspace\R2021a\polyspace\bin (key E:/Polyspace/R2021a/polyspace/bin, mtime 1630905669): 85 files, no impossibiliti 
-es.
+# C:\Windows (key C:/Windows, mtime 1648745074): 124 files, no impossibilities. 
+
+# E:\Polyspace\R2021a\polyspace\bin (key E:/Polyspace/R2021a/polyspace/bin, mtime 1630905669): 85 files, no impossibilities.
 # C:\Program Files\Microchip\xc8\v2.32\bin (key C:/Program Files/Microchip/xc8/v2.32/bin, mtime 1631887284): 12 files, no impossibilities.
 # C:\Program Files\Cloudflare\Cloudflare WARP\ (key C:/Program Files/Cloudflare/Cloudflare WARP/, mtime 1649657032): 11 files, no impossibilities.
-# E:\Polyspace\R2021a\bin (key E:/Polyspace/R2021a/bin, mtime 1632708402): 20 files, no impossibilities.
-# C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10 (key C:/Users/PC/AppData/Roaming/Micr 
-osoft/Windows/Start Menu/Programs/Python 3.10, mtime 1650880542): 6 files, no impossibilities.
-# src (key e:/SCHOOL_YEAR/4_Giai_thuat_cau_truc_dl/NHOM5_GIAI-CAU-DO-SUDOKU/SUDOKU_CODE/src, mtime 1653991660): 3 files, no impossibilities.
+# E:\Polyspace\R2021a\bin (key E:/Polyspace/R2021a/bin, mtime 1632708402): 20 files, no impossibilit 
+ies.
+# C:\Users\PC\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10 (key C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.10, mtime 1650880542): 6 files, no impossibilities.
+# src (key e:/SCHOOL_YEAR/4_Giai_thuat_cau_truc_dl/NHOM5_GIAI-CAU-DO-SUDOKU/SUDOKU_CODE/src, mtime 1653992348): 4 files, no impossibilities.
 # C:\msys64\mingw64\bin (key C:/msys64/mingw64/bin, mtime 1645607302): 207 files, no impossibilities.
-# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1649921785): 8 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1653976608): 3 
-153 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git 
+/cmd, mtime 1649921785): 8 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653976608): 3153 files, no impossibilities.
 # E:\bin: could not be stat'd.
 # C:\Program Files (x86)\VMware\VMware Player\bin\ (key C:/Program Files (x86)/VMware/VMware Player/bin/, mtime 1638187165): 4 files, no impossibilities.
-# C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin (key C:/Users/PC/AppData/Local/Programs/Microsoft VS Code Insiders/bin, mtime 1653646505): 4 files, no impossibilities.
-# C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts (key C:/Users/PC/AppData/Local/Programs/Python 
-/Python310/Scripts, mtime 1652857997): 81 files, no impossibilities.
+# C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin (key C:/Users/PC/AppData/Local/Programs/Microsoft VS Code Insiders/bin, mtime 1653984122): 4 files, no imp 
+ossibilities.
+# C:\Users\PC\AppData\Local\Programs\Python\Python310\Scripts (key C:/Users/PC/AppData/Local/Programs/Python/Python310/Scripts, mtime 1652857997): 81 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1623047926): 5 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1653069630): 103 files, no impossibilities.
 
-# 4137 files, no impossibilities in 27 directories.
+# 4138 files, no impossibilities 
+ in 27 directories.
 
 # Implicit Rules
 
@@ -310,31 +313,23 @@ osoft/Windows/Start Menu/Programs/Python 3.10, mtime 1650880542): 6 files, no im
 
 # Files
 
-all: output main.exe
+all: output Backtracking.exe
 #  Command-line target.
-#  Impl 
-icit rule search has not been done.
+#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
 #  commands to execute (from `makefile', line 68):
 	@echo Executing 'all' complete!
 	
 
-# Not a target:
-src/main.o:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
 .PHONY: clean
 #  Implicit rule search has not been done.
-#  
- Modification time never checked.
-#  File has not been updated.
+#  Modification time never checked.
+#   
+File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -342,21 +337,10 @@ src/main.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-main.exe: src/main.o
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `makefile', line 74):
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFL 
-AGS) $(LIBS)
-	
-
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-31 17:07:40
+#  Last modified 2022-05-31 15:05:07
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -366,14 +350,14 @@ makefile:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
+#  File has 
+ not been updated.
 
 run: all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  command 
-s to execute (from `makefile', line 90):
+#  commands to execute (from `makefile', line 90):
 	./$(OUTPUTMAIN)
 	@echo Executing 'run: all' complete!
 	
@@ -388,41 +372,78 @@ s to execute (from `makefile', line 90):
 
 clean:
 #  Phony target (prerequisite of .PHONY).
+ 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 85):
- 
 	$(RM) $(OUTPUTMAIN)
 	$(RM) $(call FIXPATH,$(OBJECTS))
 	@echo Cleanup complete!
 	
 
+Backtracking.exe: src/Backtracking.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := Backtracking.exe
+# automatic
+# % := 
+# automatic
+# * := 
+# a 
+utomatic
+# + := src/Backtracking.o
+# automatic
+# | := 
+# automatic
+# < := src/Backtracking.o
+# automatic
+# ^ := src/Backtracking.o
+# automatic
+# ? := src/Backtracking.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/17=12%
+#  commands to execute (from `makefile', line 74):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
+	
+
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-31 17:07:40
+#  Last modified 2022-05-31 17:19:09
 #  File has been updated.
-#  Successfully updated.
+#  Successfully u 
+pdated.
 #  commands to execute (from `makefile', line 71):
 	$(MD) $(OUTPUT)
 	
 
+# Not a target:
+src/Backtracking.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 17:19:09
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/29=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buf 
-make.exe: *** No rule to make target `src/main.o', needed by `main.exe'.  Stop.
-
-fers: 1
+# # of strings in strc 
+ache: 1
+# # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue May 31 17:07:57 2022
+# Finished Make data base on Tue May 31 17:23:43 2022
 
  

@@ -562,8 +562,11 @@ int main(void) {
     cin >> n;
     switch (n) {
     case 1:
-        if (backtracking())
+        if (backtracking()) {
+            cout << "Solution: " << endl;
+            cout << "\n+-----------+-----------+-----------+\n";
             print_sudoku();
+        }
         else
             cout << "No solution exists\n";
         break;
@@ -585,7 +588,6 @@ int main(void) {
             }
         } else
             cout << "Solution could not be found" << endl;
-
         cout << "Solution: " << endl;
         cout << "\n+-----------+-----------+-----------+\n";
         for (int i = 0; i < MATRIX_SIZE; i++) {
