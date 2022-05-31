@@ -572,7 +572,7 @@ void getmatrix(void){
             while (getline(myFile, line)){
                 char p[line.length()];
                 p[0] = line[0];
-                if(p[0] == '*') continue;
+                if(p[0] == '*' || p[0] == '%') continue;
                 else if(p[0] == '+') {
                     if(getprob(line)==0){
                         cout << "Found the log" << endl;
