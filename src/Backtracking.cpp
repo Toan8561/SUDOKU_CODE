@@ -540,10 +540,47 @@ void getinfo(void){
         myFile.close();   
 }
 
+void getmatrix(void){
+    int i=0;
+    fstream myFile;
+    myFile.open("log.txt", ios::in);
+    if (myFile.is_open()){
+            string line;
+            while (getline(myFile, line)){
+                char p[line.length()];
+                p[0] = line[0];
+                if(p[0] == '*') continue;
+                else if(p[0] == '#'){
+                    for (int i = 1; i < sizeof(p); i++) {
+                     p[i] = line[i];
+                     cout << p[i];
+                    }
+                    cout << " is loading" << endl;
+                    continue;
+                }
+                else if(p[0] == '>'){
+                    int m=0;
+                    for (int j = 1; j < sizeof(p);) {
+                     p[j] = line[j];
+                     if(p[j]!=' ') {
+                        matrix[i][m]=p[j]-'0';
+                        m++;
+                        j++;
+                        }
+                     else j++;
+                    }
+                    i++;
+                }
+                else break;
+            }
+        }  
+        myFile.close();   
+}
 //-------------------------------------------//
 
 int main(void) {
     getinfo();
+    getmatrix();
     srand(time(0));
     cout << "Solving the sudoku:\n";
     SudokuMatrix* m = new SudokuMatrix();
