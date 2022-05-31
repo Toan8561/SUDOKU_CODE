@@ -518,7 +518,7 @@ bool initialize(SudokuMatrix* &m);
 
 void getinfo(void){
     fstream myFile;
-        myFile.open("log.txt", ios::in);
+        myFile.open("log1.txt", ios::in);
         if (myFile.is_open()){
             string line;
             while (getline(myFile, line)){
@@ -560,7 +560,7 @@ int getprob(string line){
 void getmatrix(void){
     int i=0;
     fstream myFile;
-    myFile.open("log.txt", ios::in);
+    myFile.open("log1.txt", ios::in);
     if (myFile.is_open()){
             string line;
             while (getline(myFile, line)){
@@ -608,7 +608,7 @@ void getmatrix(void){
 void write_solution(int type){
     int i,j;
     fstream myFile;
-    myFile.open("log.txt", ios::app);
+    myFile.open("log1.txt", ios::app);
     if (myFile.is_open()){
         myFile << "\n";
         for (i = 0; i < SIZE; i++) {
@@ -698,7 +698,7 @@ int main(void) {
 
     case 3:{
         fstream myFile;
-        myFile.open("log.txt", ios::app);
+        myFile.open("log1.txt", ios::app);
         if (myFile.is_open()){
         myFile << "\n";
         solution = m->solve(puzzleToSolve.c_str());
