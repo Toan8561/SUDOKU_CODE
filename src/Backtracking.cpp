@@ -613,7 +613,7 @@ void write_solution(int type){
     fstream myFile;
     myFile.open("log.txt", ios::app);
     if (myFile.is_open()){
-        myFile << "\n\n";
+        myFile << "\n";
         for (i = 0; i < SIZE; i++) {
             myFile << ">";
             for(j = 0; j < SIZE; j++) {
@@ -622,8 +622,14 @@ void write_solution(int type){
             myFile << "\n";
         }
         switch (type) {
-            case 1: myFile << "Solution: Backtracking \n" ;
-            case 2: myFile << "Solution: Bitwise \n" ;
+            case 1: {
+                myFile << "Solution: Backtracking \n" ;
+                break;
+                }
+            case 2: {
+                myFile << "Solution: Bitwise \n" ;
+                break;
+            }
             default: break;
         }
         myFile <<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \n\n";
