@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <string>
 #include <string.h>
 #include <queue>
 #include <stdlib.h>
@@ -8,11 +7,15 @@
 #include <list>
 #include "SudokuMatrix.h"
 #include <stack>
-#include <string>
 #include "Definitions.h"
 #include <bits/stdc++.h>
+#include <string>
+#include <cstring>
+
 #define SIZE 9
 using namespace std;
+
+#define MAX_DIGITS 10
 
 int matrix[9][9] = {
     {0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -540,6 +543,26 @@ void getinfo(void){
         myFile.close();   
 }
 
+int getprob(string line){
+    int n;
+    cout << "enter id number" << endl;
+    cin >> n;
+    char name[]="+PROBLEM_NO.";
+    char num_char[MAX_DIGITS + sizeof(char)];
+    sprintf(num_char, "%d", n);
+    string names = string(name);
+    string num_chars = string(num_char);
+    string temp= names+num_chars;
+    int m = temp.length();
+    char id[m+1];
+    strcpy(id, temp.c_str());
+    int a = line.length();
+    char char_array[a + 1];
+    strcpy(char_array, line.c_str());
+    int result = strcmp(id, char_array);
+    return result;
+}
+
 void getmatrix(void){
     int i=0;
     fstream myFile;
@@ -550,6 +573,11 @@ void getmatrix(void){
                 char p[line.length()];
                 p[0] = line[0];
                 if(p[0] == '*') continue;
+                else if(p[0] == '+') {
+                    if(getprob(line)==0){
+                        cout << "Found the log" << endl;
+                    }
+                }
                 else if(p[0] == '#'){
                     for (int i = 1; i < sizeof(p); i++) {
                      p[i] = line[i];
@@ -559,6 +587,7 @@ void getmatrix(void){
                     continue;
                 }
                 else if(p[0] == '>'){
+                    cout << "getting data" <<endl;
                     int m=0;
                     for (int j = 1; j < sizeof(p);) {
                      p[j] = line[j];
