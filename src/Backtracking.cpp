@@ -31,17 +31,6 @@ int matrix[9][9] = {
     {0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
-// int matrix[9][9] = {
-//     {3, 0, 6, 5, 0, 8, 4, 0, 0},  
-//     {5, 2, 0, 0, 0, 0, 0, 0, 0},  
-//     {0, 8, 7, 0, 0, 0, 0, 3, 1},  
-//     {0, 0, 3, 0, 1, 0, 0, 8, 0},  
-//     {9, 0, 0, 8, 6, 3, 0, 0, 5},  
-//     {0, 5, 0, 0, 9, 0, 6, 0, 0},  
-//     {1, 3, 0, 0, 0, 0, 2, 5, 0},  
-//     {0, 0, 0, 0, 0, 0, 0, 7, 4},  
-//     {0, 0, 5, 2, 0, 6, 3, 0, 0}
-// };
 
 //function to print sudoku
 void print_sudoku() {
@@ -577,10 +566,15 @@ void getmatrix(void){
             while (getline(myFile, line)){
                 char p[line.length()];
                 p[0] = line[0];
-                if(p[0] == '*' || p[0] == '%') continue;
+                if(p[0] == '*' || p[0] == '%' || p[0] == '$' || p[0] == '=') continue;
                 else if(p[0] == '+') {
                     if(getprob(line)==0){
                         cout << "Found the log" << endl;
+                        continue;
+                    }
+                    else {
+                        cout << "Not found int log" << endl;
+                        continue;
                     }
                 }
                 else if(p[0] == '#'){
@@ -590,7 +584,7 @@ void getmatrix(void){
                     }
                     cout << " is loading" << endl;
                     continue;
-                }
+                    }
                 else if(p[0] == '>'){
                     cout << "getting data" <<endl;
                     int m=0;
@@ -604,7 +598,7 @@ void getmatrix(void){
                      else j++;
                     }
                     i++;
-                }
+                    }
                 else break;
             }
         }  
@@ -618,7 +612,7 @@ void write_solution(int type){
     if (myFile.is_open()){
         myFile << "\n";
         for (i = 0; i < SIZE; i++) {
-            myFile << ">";
+            myFile << "<";
             for(j = 0; j < SIZE; j++) {
                 myFile <<matrix[i][j]<<" ";
             }
@@ -706,7 +700,7 @@ int main(void) {
         fstream myFile;
         myFile.open("log.txt", ios::app);
         if (myFile.is_open()){
-        myFile << "\n\n";
+        myFile << "\n";
         solution = m->solve(puzzleToSolve.c_str());
         if (solution != NULL) {
             while(!solution->empty()) {
