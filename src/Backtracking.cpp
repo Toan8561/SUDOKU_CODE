@@ -605,6 +605,11 @@ void getmatrix(void){
         }  
         myFile.close();   
 }
+
+void writelog(void){
+    
+}
+
 //-------------------------------------------//
 
 int main(void) {
@@ -665,8 +670,8 @@ int main(void) {
 	            puzzle[next.row][next.column] = next.value+1;
 	            solution->pop();
             }
-        } else
-            cout << "Solution could not be found" << endl;
+        } 
+        else cout << "Solution could not be found" << endl;
         cout << "Solution: " << endl;
         cout << "\n+-----------+-----------+-----------+\n";
         for (int i = 0; i < MATRIX_SIZE; i++) {
