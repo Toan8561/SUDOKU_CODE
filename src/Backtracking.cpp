@@ -5,12 +5,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <list>
-#include "SudokuMatrix.h"
+#include <chrono>
+#include <ctime>
 #include <stack>
-#include "Definitions.h"
 #include <bits/stdc++.h>
 #include <string>
 #include <cstring>
+#include "SudokuMatrix.h"
+#include "Definitions.h"
 
 #define SIZE 9
 using namespace std;
@@ -606,8 +608,33 @@ void getmatrix(void){
         myFile.close();   
 }
 
-void writelog(void){
-    
+void write_solution(int type){
+    int i,j;
+    fstream myFile;
+    myFile.open("log.txt", ios::app);
+    if (myFile.is_open()){
+        myFile << "\n\n";
+        for (i = 0; i < SIZE; i++) {
+            myFile << ">";
+            for(j = 0; j < SIZE; j++) {
+                myFile <<matrix[i][j]<<" ";
+            }
+            myFile << "\n";
+        }
+        switch (type) {
+            case 1: myFile << "Solution: Backtracking \n" ;
+            case 2: myFile << "Solution: Bitwise \n" ;
+            default: break;
+        }
+        myFile <<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \n\n";
+        cout << "would you like to run again"<<endl;
+        cout << "1 -> Yes    0 -> No"<<endl;
+        cout << "Enter: ";
+        int o;
+        cin >> o;
+        if(o==1) myFile <<"=SOLUTION \n";
+    }
+    myFile.close(); 
 }
 
 //-------------------------------------------//
@@ -647,6 +674,8 @@ int main(void) {
             cout << "Solution: " << endl;
             cout << "\n+-----------+-----------+-----------+\n";
             print_sudoku();
+            auto end = chrono::system_clock::now();
+            write_solution(n);
         }
         else
             cout << "No solution exists\n";
@@ -657,12 +686,18 @@ int main(void) {
             cout << "Solution: " << endl;
             cout << "\n+-----------+-----------+-----------+\n";
             print_sudoku();
+            auto end = chrono::system_clock::now();
+            write_solution(n);
         }
         else
             cout << "No solution exists\n";
         break;
 
-    case 3:
+    case 3:{
+        fstream myFile;
+        myFile.open("log.txt", ios::app);
+        if (myFile.is_open()){
+        myFile << "\n\n";
         solution = m->solve(puzzleToSolve.c_str());
         if (solution != NULL) {
             while(!solution->empty()) {
@@ -674,21 +709,37 @@ int main(void) {
         else cout << "Solution could not be found" << endl;
         cout << "Solution: " << endl;
         cout << "\n+-----------+-----------+-----------+\n";
+        
         for (int i = 0; i < MATRIX_SIZE; i++) {
             cout <<"|";
+            myFile << ">";
             for (int j = 0; j < MATRIX_SIZE; j++) {
 	            cout <<" " << puzzle[i][j] << " " << "|";
+                myFile << puzzle[i][j]<<" ";
             }
              cout << "\n+-----------+-----------+-----------+\n";
+            myFile << "\n";
         }
+        myFile << "Solution: Exact cover\n" ;
+        myFile <<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% \n\n";
+        cout << "would you like to run again"<<endl;
+        cout << "1 -> Yes    0 -> No"<<endl;
+        cout << "Enter: ";
+        int o;
+        cin >> o;
+        if(o==1) myFile <<"=SOLUTION \n";
+
         delete solution;
         solution = NULL;
         break;
+        }
+        myFile.close();
+    }
 
     default:
-        
         break;
     }
+
     if (solution != NULL) {
         while(!solution->empty())
             solution->pop();
