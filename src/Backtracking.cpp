@@ -112,57 +112,61 @@ bool backtracking() {
 
 //------------------Bitwise------------------//
 bool solve(int r, int c, int board[9][9], int submatrixDigits[3][3], int rowDigits[9], int columnDigits[9]) {
-    if (r == 9) {
-        return true;
-    }
-    if (c == 9) {
-        return solve(r + 1, 0, board, submatrixDigits, rowDigits, columnDigits);
-    }
-    if (board[r] == 0) {
-        for (int i = 1; i <= 9; i++) {
-            int digit = 1 << (i - 1);
-            if (!((submatrixDigits[r / 3][c / 3] && digit) || (rowDigits[r] && digit) || (columnDigits[r] && digit))) {
-                submatrixDigits[r / 3][c / 3] |= digit;
-                rowDigits[r] |= digit;
-                columnDigits[c] |= digit;
-                board[r][r] = i;
-                if (solve(r, c + 1, board, submatrixDigits,rowDigits, columnDigits)) 
-                    return true;
-                else {
-                    submatrixDigits[r / 3][c / 3] &= ~digit;
-                    rowDigits[r] &= ~digit;
-                    columnDigits[c] &= ~digit;
-                    board[r][c] = 0;
-                }
-            }
-        }
-        return false;
-    }
-    return solve(r, c + 1, board, submatrixDigits, rowDigits, columnDigits);
+	if (r == 9) {
+		return true;
+	}
+	if (c == 9) {
+		return solve(r + 1, 0, board, submatrixDigits, rowDigits, columnDigits);
+	}
+	
+	if (board[r][c] == 0) {
+		for (int i = 1; i <= 9; i++) {
+			int digit = 1 << (i - 1);
+			if (!((submatrixDigits[r / 3][c / 3] & digit) || (rowDigits[r] & digit) || (columnDigits[c] & digit))) {
+				submatrixDigits[r / 3][c / 3] |= digit;
+				rowDigits[r] |= digit;
+				columnDigits[c] |= digit;
+				board[r][c] = i;
+				if (solve(r, c + 1, board, submatrixDigits, rowDigits, columnDigits)) {
+					return true;
+				} else {
+					submatrixDigits[r / 3][c / 3] &= ~digit;
+					rowDigits[r] &= ~digit;
+					columnDigits[c] &= ~digit;
+					board[r][c] = 0;
+				}
+			}
+		}
+		return false;
+	}
+	return solve(r, c + 1, board, submatrixDigits, rowDigits, columnDigits);
 }
 
 bool SolveSudoku(int board[9][9]) {
-    int submatrixDigits[3][3];
-    int columnDigits[9];
-    int rowDigits[9];
-    for (int i = 0; i < 3; i++)
-        memset(submatrixDigits[i], 0, 3 * sizeof(int));
-    memset(rowDigits, 0, 9 * sizeof(int));
-    memset(columnDigits, 0, 9 * sizeof(int));
-    for (int i = 0; i < 9; i++)
-        for (int j = 0; j < 9; j++)
-            if (board[i][j] > 0) {
-                int value = 1 << (board[i][j] - '1');
-                submatrixDigits[i / 3][j / 3] |= value;
-                rowDigits[i] |= value;
-                columnDigits[j] |= value;
-            }
-    if (solve(0, 0, board, submatrixDigits,rowDigits, columnDigits))
-        return true;
-    else
-        return false;
-} 
-  
+	int submatrixDigits[3][3];
+	int columnDigits[9];
+	int rowDigits[9];
+
+	for (int i = 0; i < 3; i++)
+		memset(submatrixDigits[i], 0, 3 * sizeof(int));
+	memset(rowDigits, 0, 9 * sizeof(int));
+	memset(columnDigits, 0, 9 * sizeof(int));
+	
+	for (int i = 0; i < 9; i++)
+		for (int j = 0; j < 9; j++)
+			if (board[i][j] > 0) {
+				int value = 1 << (board[i][j] - '1');
+				submatrixDigits[i / 3][j / 3] |= value;
+				rowDigits[i] |= value;
+				columnDigits[j] |= value;
+			}
+
+	if (solve(0, 0, board, submatrixDigits, rowDigits, columnDigits))
+		return true;
+	else
+		return false;
+}
+
 void printMatrix(int grid[9][9]) {
 	for (int row = 0; row < 9; row++) {
 	    for (int col = 0; col < 9; col++)
@@ -170,7 +174,6 @@ void printMatrix(int grid[9][9]) {
 		cout << "\n\n";
 	}
 }
-
 //-------------------------------------------//
 
 //----------------Exact cover----------------//
